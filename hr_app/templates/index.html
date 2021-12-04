@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HR app</title>
+</head>
+<body>
+    <div class="col-sm-12">
+            <h1>Welcome</h1>
+            <p>This HR API expose the following endpoints: </p>
+            <ul>
+                <li>List of all employees: <a href="http://127.0.0.1:8000/employees">host/employees</a></li>
+                <li>Employees filtered by gender(ex: M, F or undefined): <a href="http://127.0.0.1:8000/employees/?gender=m">host/employees/?gender=m</a></li>
+                <li>Employee by id: <a href="http://127.0.0.1:8000/employee/3">host/employee/3</a></li>
+                <li>Average age per industry: <a href="http://127.0.0.1:8000/avg_age_industry">host/avg_age_industry</a></li>
+                <li>Average salaries per industry: <a href="http://127.0.0.1:8000/avg_salary_industry">host/avg_salary_industry</a></li>
+                <li>Average salaries per years of experience: <a href="http://127.0.0.1:8000/avg_salary_experience">host/avg_salary_experience</a></li>
+                <li>Total of salaries: <a href="http://127.0.0.1:8000/total_salary">host/total_salary</a></li>
+                <li>Total of salaries per industry: <a href="http://127.0.0.1:8000/salary_per_industry">host/sallary_per_industry</a></li>
+                <li>Employees over age 60: <a href="http://127.0.0.1:8000/employees_over_60">host/employees_over_60</a></li>
+            </ul>
+        </div>
+</body>
+</html>
